@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Catamaran', sans-serif;
-font-family: 'Kanit', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Ubuntu', sans-serif;
 }
 .row{
     display: flex;
@@ -22,7 +18,7 @@ font-family: 'Ubuntu', sans-serif;
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%;} 
 
 .padding{
     padding: 0 10%;
@@ -50,8 +46,10 @@ nav> h3 ,ul{
     text-decoration: none;
 }
 .One-Page-Wonder{
+
     height: 700px;
     background-image: linear-gradient(70deg ,rgb(180, 11, 11),orange,rgb(255, 0, 187),orange);
+    font-family: 'Work Sans', sans-serif !important;
 }
 .One-Page-Wonder>div{
     padding: 15%;
@@ -92,6 +90,33 @@ footer{
     color: white;
     padding: 4% 40%;
 }
-footer>p{
+.hamburger{
+    display: none !important;
+}
+@media only screen and (max-width: 991px ){
+    .col-6{
+        width: 100% !important;
+    }
+    .row{
+        flex-direction: column;
+
+    }
+    .For-those-about{
+        height: fit-content
+    }
+    .reverse-row{
+        flex-direction: column-reverse !important;
+    }
+    .padding{
+        padding: 0 20%;
+    }
+    .tel{
+        display: none;
+    }
+    .hamburger{
+        display: block !important;
+        padding-top: 20px;
+        font-size: 30px;
+    }
     
 }
